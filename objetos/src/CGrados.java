@@ -7,6 +7,7 @@
 /**
  *
  * @author racso
+ * Clase entidad que seria la de los grados no contienen logica ni operaciones
  */
 public class CGrados {
 
