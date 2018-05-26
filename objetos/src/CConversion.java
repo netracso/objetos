@@ -5,6 +5,7 @@ public class CConversion {
     //Se declara la clase Cgrados y clase CLongitudes
     private CGrados grados;
     private CLongitudes metros;
+    
 //Metodo CentigrasAFarenheit
 
     public float centigradosAFarenheit() {
@@ -19,10 +20,22 @@ public class CConversion {
 
     public float metrosAPies() {
         //Este metodo tiene lógica
-        float resultado = metros.getMetros() * 2.28f;
+        float resultado = metros.getMetros() * 3.28f;
         return resultado;
     }
-
+//Método para convewrsion de farenheit a centigrados
+    public float farenheitACentigrados(){
+        //Este Metodo tiene lógica
+    float resultado=(grados.getFarenheit()-32)/1.80f;
+    return resultado;
+    }
+    public float piesAMetros() {
+        //Este metodo tiene lógica
+        float resultado = metros.getPies() /3.28f;
+        return resultado;
+    }
+    
+    
     //Comienzan los metos Get and Set
 
     public CGrados getGrados() {

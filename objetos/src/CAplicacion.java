@@ -12,7 +12,6 @@ public class CAplicacion {
         //Aplicar el modelo c.centigradosAFarenheit() despues se selecciona 
         //y se arrastra al sout
         System.out.println(c.centigradosAFarenheit());
-
         //Creando el objeto de tipo metros
         CLongitudes m = new CLongitudes();
         //Asignación de de valor a su atributo metros 
@@ -21,7 +20,18 @@ public class CAplicacion {
         CConversion p = new CConversion();
         p.setMetros(m);
         System.out.println(p.metrosAPies());
-
+        //instanciando a farenheit y convertirlos en centigrados 
+        CGrados grados =new CGrados();
+         grados.setFarenheit(20);
+        CConversion f = new CConversion();         
+        f.setGrados(grados);
+        System.out.println(f.farenheitACentigrados());
+        //Intanciando a objeto para convertir de pies a Metros
+        CLongitudes pies = new CLongitudes();
+        pies.setPies(20);
+        CConversion metros = new CConversion();
+        metros.setMetros(pies);
+        System.out.println(metros.piesAMetros());
     }
 
 }
